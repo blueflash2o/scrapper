@@ -1,0 +1,14 @@
+{
+    "sites":[{
+            "url":"http://testing-ground.scraping.pro/login",
+            "origin":"http://testing-ground.scraping.pro",
+            "forms":[{
+                "inputs":{
+                    "user":"admin",
+                    "pwd":"12345"
+                },
+                "success":""
+            }]
+        }
+    ]
+}
