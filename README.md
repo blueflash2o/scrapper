@@ -1,2 +1,2 @@
-# scrapper
-a web scrapper for a code challenge
+# web crawler
+a web crawler for a code challenge
