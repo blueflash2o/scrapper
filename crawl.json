@@ -15,6 +15,22 @@
                     }
                 }
             ]
+        },
+        {
+            "url": "http://testing-ground.scraping.pro/login",
+            "origin": "http://testing-ground.scraping.pro",
+            "forms": [
+                {
+                    "inputs": {
+                        "usr": "admin",
+                        "pwd": "badpassword"
+                    },
+                    "result": {
+                        "element": "h3",
+                        "attr": "class"
+                    }
+                }
+            ]
         }
     ]
 }
