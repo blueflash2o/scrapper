@@ -4,7 +4,7 @@
             "origin":"http://testing-ground.scraping.pro",
             "forms":[{
                 "inputs":{
-                    "user":"admin",
+                    "usr":"admin",
                     "pwd":"12345"
                 },
                 "success":""
