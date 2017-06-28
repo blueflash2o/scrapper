@@ -8,7 +8,7 @@ Lauch a web browser to `http://localhost:8081/crawl`.
 
 Will crawl the urls in the crawl.json and fill out and submit the forms that are set.
 
-##The crawl.json
+## The crawl.json
 The configs are done in the `crawl.json`.
 ```
 "sites": [
