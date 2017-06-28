@@ -30,11 +30,9 @@ exports = module.exports = app;
  * @param {*} site the site data that holds forms.
  */
 function fillform(html, site) {
-    request.debug = true;
     var $ = cheerio.load(html);
     var origin = site.origin;
     site.forms.forEach(function (form) {
-        console.log(form);
         var postAction = $('form').attr('action');
         var url = `${origin}/${postAction}`;
         request.post({ url: url, form: form.inputs }, function optionalCallback(err, httpResponse, body) {
@@ -53,7 +51,8 @@ function fillform(html, site) {
  */
 function scrapper(html, form) {
     var $ = cheerio.load(html);
-    var h3 = $('h3');
-    var rc = h3.attr("class");
-    console.log(`${h3.attr("class")} response ${h3.text()}`);
+    var result = form.result;
+    var element = $(result.element);
+    var attr = element.attr(result.attr);
+    console.log(`${attr} response ${element.text()}`);
 }

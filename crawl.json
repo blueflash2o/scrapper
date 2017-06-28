@@ -1,14 +1,20 @@
 {
-    "sites":[{
-            "url":"http://testing-ground.scraping.pro/login",
-            "origin":"http://testing-ground.scraping.pro",
-            "forms":[{
-                "inputs":{
-                    "usr":"admin",
-                    "pwd":"12345"
-                },
-                "success":""
-            }]
+    "sites": [
+        {
+            "url": "http://testing-ground.scraping.pro/login",
+            "origin": "http://testing-ground.scraping.pro",
+            "forms": [
+                {
+                    "inputs": {
+                        "usr": "admin",
+                        "pwd": "12345"
+                    },
+                    "result": {
+                        "element": "h3",
+                        "attr": "class"
+                    }
+                }
+            ]
         }
     ]
 }
